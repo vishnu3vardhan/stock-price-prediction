@@ -2,59 +2,108 @@
 
 ## 📌 Project Overview
 
-This project predicts the next day's stock closing price using historical stock data from the past 10 years (2016–2026).
+Stock price prediction is a challenging task that aims to forecast market trends, helping investors and analysts make informed decisions.
 
-It uses Machine Learning techniques to analyze patterns and trends in stock prices and generate predictions based on technical indicators.
+This project predicts the **next day's stock closing price** using historical stock market data from the past 10 years (2016–2026).
 
+It combines **Machine Learning** with **data visualization** and an **interactive dashboard** to analyze stock trends and generate predictions based on technical indicators.
 ---
 
 ## 🎯 Objective
 
-To build a machine learning model that predicts the next day's closing price of stocks using historical data.
+To build an end-to-end Machine Learning pipeline that:
+
+* Processes historical stock data
+* Trains predictive models
+* Evaluates performance
+* Provides an interactive dashboard for visualization
+
+---
+
+## 🚀 Key Features
+
+* 📊 Predicts next-day stock prices
+* 📈 Uses technical indicators (moving averages, returns)
+* 🤖 Machine Learning model (Random Forest)
+* 📉 Performance evaluation using MAE & RMSE
+* 🖥️ Interactive dashboard built with Streamlit & Plotly
+* ⚡ Automated data pipeline (download → preprocess → train → visualize)
 
 ---
 
 ## 📊 Dataset
 
-* Source: Yahoo Finance (via yfinance)
-* Stocks: Top 30 NIFTY 50 companies
-* Time Range: January 2016 – January 2026
-* Data Includes:
+* **Source:** Yahoo Finance (via `yfinance`)
+* **Stocks:** Top 30 NIFTY 50 companies
+* **Time Range:** January 2016 – January 2026
 
-  * Open
-  * High
-  * Low
-  * Close
-  * Volume
+### Data includes:
+
+* Open
+* High
+* Low
+* Close
+* Volume
 
 ---
 
 ## ⚙️ Features Used
 
-* Previous Day Close (Prev_Close)
-* 5-day Moving Average (MA5)
-* 10-day Moving Average (MA10)
-* 50-day Moving Average (MA50)
+* Previous Day Close (`Prev_Close`)
+* 5-day Moving Average (`MA5`)
+* 10-day Moving Average (`MA10`)
+* 50-day Moving Average (`MA50`)
 * Daily Returns
 
 ---
 
 ## 🤖 Model Used
 
-* Random Forest Regressor
+* **Random Forest Regressor**
+
+Chosen for:
+
+* Good performance on tabular data
+* Ability to capture non-linear relationships
+* Minimal tuning required
 
 ---
 
 ## 🧪 Evaluation Metrics
 
-* Mean Absolute Error (MAE)
-* Root Mean Squared Error (RMSE)
+* **Mean Absolute Error (MAE)**
+* **Root Mean Squared Error (RMSE)**
 
 ---
 
 ## 📈 Results
 
-The model is able to capture general stock price trends and patterns. However, due to the volatile and unpredictable nature of the stock market, it cannot predict exact prices.
+The model successfully captures **general stock price trends** and patterns.
+
+However:
+
+* Stock markets are highly volatile
+* Predictions are approximate, not exact
+
+---
+
+## 🖥️ Interactive Dashboard
+
+This project includes a **Streamlit + Plotly dashboard** for visualization.
+
+### Features:
+
+* 📌 Select stock from dropdown
+* 📊 View Actual vs Predicted prices
+* 📈 Interactive Plotly charts
+* 📉 Performance metrics (MAE, RMSE)
+* 🧠 Trend insights (Uptrend / Downtrend)
+
+### Run Dashboard:
+
+```bash
+streamlit run app.py
+```
 
 ---
 
@@ -64,9 +113,9 @@ The model is able to capture general stock price trends and patterns. However, d
 stock-price-prediction/
 │
 ├── data/                # Ignored (auto-generated)
-├── outputs/             # Predictions and graphs
-│   ├── predictions/
-│   └── *.png
+├── outputs/
+│   └── predictions/     # Used by dashboard
+│
 ├── notebooks/
 ├── src/
 │   ├── data_loader.py
@@ -74,7 +123,8 @@ stock-price-prediction/
 │   ├── model.py
 │   └── utils.py
 │
-├── main.py
+├── app.py               # Streamlit dashboard
+├── main.py              # Pipeline execution
 ├── requirements.txt
 └── README.md
 ```
@@ -83,39 +133,54 @@ stock-price-prediction/
 
 ## ▶️ How to Run
 
-1. Install dependencies:
+### 1. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Run the project:
+### 2. Run ML pipeline
 
 ```bash
 python main.py
 ```
 
+This will:
+
+* Download stock data
+* Process data
+* Train models
+* Generate predictions
+
 ---
 
-## 📥 Data Collection
+## 📥 Data Handling
 
-Stock data is automatically downloaded using the `yfinance` library.
+* Raw data is fetched dynamically using `yfinance`
+* Only prediction outputs are stored for dashboard use
+* Large datasets are excluded from GitHub for efficiency
 
 ---
 
 ## 📊 Output
 
-* CSV files containing predictions
-* Graphs comparing Actual vs Predicted prices
+* 📄 Prediction CSV files
+* 📈 Actual vs Predicted graphs
+* 📊 Interactive dashboard
 
 ---
 
 ## ⚠️ Disclaimer
 
-Stock price prediction is inherently uncertain and influenced by many external factors. This project is for educational purposes only and should not be used for financial decisions.
+Stock price prediction is inherently uncertain and influenced by many external factors such as market sentiment, news, and global events.
+
+👉 This project is for **educational purposes only** and should not be used for financial decisions.
 
 ---
 
 ## 👨‍💻 Author
 
-**Vishnu Vardhan**
+[**Vishnu Vardhan**](https://github.com/vishnu3vardhan)
+---
+
+## ⭐ If you found this useful, consider giving it a star!
