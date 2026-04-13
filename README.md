@@ -2,11 +2,12 @@
 
 ## 📌 Project Overview
 
-Stock price prediction is a challenging task that aims to forecast market trends, helping investors and analysts make informed decisions.
+- Stock price prediction is a challenging task that aims to forecast market trends, helping investors and analysts make informed decisions.
 
-This project predicts the **next day's stock closing price** using historical stock market data from the past 10 years (2016–2026).
+- This project predicts the **next day's stock closing price** using historical stock market data from the past 10 years (2016–2026).
 
-It combines **Machine Learning** with **data visualization** and an **interactive dashboard** to analyze stock trends and generate predictions based on technical indicators.
+- It combines **Machine Learning** with **data visualization** and an **interactive dashboard** to analyze stock trends and generate predictions based on technical indicators.
+
 ---
 
 ## 🎯 Objective
@@ -117,6 +118,7 @@ stock-price-prediction/
 │   └── predictions/     # Used by dashboard
 │
 ├── notebooks/
+│     └── stock_analysis.ipynb 
 ├── src/
 │   ├── data_loader.py
 │   ├── preprocessing.py
