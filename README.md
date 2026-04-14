@@ -1,10 +1,10 @@
-# 📈 Stock Price Prediction using Machine Learning
+# 📈 NSE(National Stock Exchange) Stock Price Prediction using Machine Learning
 
 ## 📌 Project Overview
 
 - Stock price prediction is a challenging task that aims to forecast market trends, helping investors and analysts make informed decisions.
 
-- This project predicts the **next day's stock closing price** using historical stock market data from the past 10 years (2016–2026).
+- This project predicts the **next day's stock closing price** using historical **NSE(National stock exchange)** stock market data from the past 10 years (2016–2026).
 
 - It combines **Machine Learning** with **data visualization** and an **interactive dashboard** to analyze stock trends and generate predictions based on technical indicators.
 
@@ -35,7 +35,7 @@ To build an end-to-end Machine Learning pipeline that:
 ## 📊 Dataset
 
 * **Source:** Yahoo Finance (via `yfinance`)
-* **Stocks:** Top 30 NIFTY 50 companies
+* **Stocks:** Top companies from NIFTY 50.
 * **Time Range:** January 2016 – January 2026
 
 ### Data includes:
