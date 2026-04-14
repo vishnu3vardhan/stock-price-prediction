@@ -1,4 +1,4 @@
-# 📈 NSE(National Stock Exchange) Stock Price Prediction using Machine Learning
+# NSE(National Stock Exchange) Stock Price Prediction using Machine Learning
 
 ## 📌 Project Overview
 
@@ -10,7 +10,7 @@
 
 ---
 
-## 🎯 Objective
+## Objective
 
 To build an end-to-end Machine Learning pipeline that:
 
@@ -21,18 +21,18 @@ To build an end-to-end Machine Learning pipeline that:
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
-* 📊 Predicts next-day stock prices
-* 📈 Uses technical indicators (moving averages, returns)
-* 🤖 Machine Learning model (Random Forest)
-* 📉 Performance evaluation using MAE & RMSE
-* 🖥️ Interactive dashboard built with Streamlit & Plotly
-* ⚡ Automated data pipeline (download → preprocess → train → visualize)
+* Predicts next-day stock prices
+* Uses technical indicators (moving averages, returns)
+* Machine Learning model (Random Forest)
+* Performance evaluation using MAE & RMSE
+* Interactive dashboard built with Streamlit & Plotly
+* Automated data pipeline (download → preprocess → train → visualize)
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 * **Source:** Yahoo Finance (via `yfinance`)
 * **Stocks:** Top companies from NIFTY 50.
@@ -48,7 +48,7 @@ To build an end-to-end Machine Learning pipeline that:
 
 ---
 
-## ⚙️ Features Used
+## Features Used
 
 * Previous Day Close (`Prev_Close`)
 * 5-day Moving Average (`MA5`)
@@ -58,7 +58,7 @@ To build an end-to-end Machine Learning pipeline that:
 
 ---
 
-## 🤖 Model Used
+## Model Used
 
 * **Random Forest Regressor**
 
@@ -70,14 +70,14 @@ Chosen for:
 
 ---
 
-## 🧪 Evaluation Metrics
+## Evaluation Metrics
 
 * **Mean Absolute Error (MAE)**
 * **Root Mean Squared Error (RMSE)**
 
 ---
 
-## 📈 Results
+## Results
 
 The model successfully captures **general stock price trends** and patterns.
 
@@ -88,17 +88,17 @@ However:
 
 ---
 
-## 🖥️ Interactive Dashboard
+## Interactive Dashboard
 
 This project includes a **Streamlit + Plotly dashboard** for visualization.
 
 ### Features:
 
-* 📌 Select stock from dropdown
-* 📊 View Actual vs Predicted prices
-* 📈 Interactive Plotly charts
-* 📉 Performance metrics (MAE, RMSE)
-* 🧠 Trend insights (Uptrend / Downtrend)
+*  Select stock from dropdown
+*  View Actual vs Predicted prices
+*  Interactive Plotly charts
+*  Performance metrics (MAE, RMSE)
+*  Trend insights (Uptrend / Downtrend)
 
 ### Run Dashboard:
 
@@ -108,7 +108,7 @@ streamlit run app.py
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 stock-price-prediction/
@@ -118,7 +118,8 @@ stock-price-prediction/
 │   └── predictions/     # Used by dashboard
 │
 ├── notebooks/
-│     └── stock_analysis.ipynb 
+│     └── reliance_analysis.ipynb 
+│     └── wipro_stock_analysis.ipynb
 ├── src/
 │   ├── data_loader.py
 │   ├── preprocessing.py
@@ -133,7 +134,7 @@ stock-price-prediction/
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### 1. Install dependencies
 
@@ -156,7 +157,7 @@ This will:
 
 ---
 
-## 📥 Data Handling
+## Data Handling
 
 * Raw data is fetched dynamically using `yfinance`
 * Only prediction outputs are stored for dashboard use
@@ -164,25 +165,23 @@ This will:
 
 ---
 
-## 📊 Output
+## Output
 
-* 📄 Prediction CSV files
-* 📈 Actual vs Predicted graphs
-* 📊 Interactive dashboard
+* Prediction CSV files
+* Actual vs Predicted graphs
+* Interactive dashboard
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 Stock price prediction is inherently uncertain and influenced by many external factors such as market sentiment, news, and global events.
 
-👉 This project is for **educational purposes only** and should not be used for financial decisions.
+This project is for **educational purposes only** and should not be used for financial decisions.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 [**Vishnu Vardhan**](https://github.com/vishnu3vardhan)
 ---
-
-## ⭐ If you found this useful, consider giving it a star!
