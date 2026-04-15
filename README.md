@@ -1,12 +1,16 @@
 # NSE(National Stock Exchange) Stock Price Prediction using Machine Learning
 
-## 📌 Project Overview
+## Project Overview
 
 - Stock price prediction is a challenging task that aims to forecast market trends, helping investors and analysts make informed decisions.
 
 - This project predicts the **next day's stock closing price** using historical **NSE(National stock exchange)** stock market data from the past 10 years (2016–2026).
 
 - It combines **Machine Learning** with **data visualization** and an **interactive dashboard** to analyze stock trends and generate predictions based on technical indicators.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f4eb713f-ed03-4fbb-878b-8b3fe8e461f6" width="700"/>
+</p>
 
 ---
 
@@ -105,6 +109,33 @@ This project includes a **Streamlit + Plotly dashboard** for visualization.
 ```bash
 streamlit run app.py
 ```
+
+## Dashboard Preview
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c7e12b09-4560-48ae-8c76-48f226a5ff35" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/67376aae-cd78-432a-a625-c0bf961d9925" width="45%"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6a5cdef7-c78f-46fc-ba21-af5932965010" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/8f2f9b70-fc17-4bbe-a330-0877be92a135" width="45%"/>
+</p>
+
+<details>
+<summary>More Screenshots</summary>
+
+<br>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7ff0309c-a677-477d-a3a3-9298d6c66c66" width="600"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d5bbf1a8-2171-4e13-b3c2-ff304d4405ab" width="600"/>
+</p>
+
+</details>
 
 ---
 
